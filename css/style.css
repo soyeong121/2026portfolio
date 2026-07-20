@@ -1,0 +1,333 @@
+a {
+    text-decoration: none;
+    color: inherit;
+}
+ul {
+    list-style: none;
+}
+html {
+    /* overflow: hidden; */
+    overflow: scroll;
+    overflow-x: hidden;
+    color: #0c0c0c;
+}
+body {
+    display: block;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    /* background: url(../images/basicBg.jpg) no-repeat; */
+    background-color: #ededed;
+    background-size: cover;
+    background-attachment: fixed;
+    object-fit: cover;
+}
+/* 스크롤 없애기 */
+body::-webkit-scrollbar {
+  display: none;
+}
+button {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    padding: 0;
+    cursor: pointer;
+}
+/* 전체 폰트 */
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-display: swap;
+}
+
+/* ------------------------------------------------------ */
+/* page1 */
+#page1 {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.name_text {
+    display: flex;
+    justify-content: center;
+
+    font-size: 1.2rem;
+
+    margin: 2%;
+}
+#page1 .title {
+    position: absolute;
+    bottom: 0;
+    left: 2%;
+    width: 100%;
+
+    font-family: 'Akira Expanded', sans-serif;
+    font-size: 30px;
+}
+#page1 .title > p:nth-of-type(1) {
+    font-size: 5.7vw;
+    white-space: nowrap;
+    margin: 0;
+}
+#page1 .title > p:nth-of-type(2) {
+    font-size: 12.55vw;
+    white-space: nowrap;
+    margin: 0;
+
+    background: linear-gradient(
+    135deg,
+    #5e5e5e,
+    #bfbfbf,
+    #0c0c0c,
+    #d6d6d6,
+    #0c0c0c,
+    #bfbfbf,
+    #5e5e5e
+);
+
+  background-size: 300% 300%;
+
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+
+  animation: gradientMove 10s linear infinite;
+}
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  100% {
+    background-position: 300% 50%;
+  }
+}
+
+/* ------------------------------------------------------ */
+/* page2 */
+#page2 {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+
+    background-color: #e0e0e0;
+}
+.profile_text {
+    width: 45%;
+    position: absolute;
+    top: 5%;
+    left: 4%;
+}
+.profile_text > p {
+    margin-bottom: 5%;
+    font-size: 1.2rem;
+    font-weight: 500;
+    /* font-family: 'Akira Expanded', sans-serif; */
+}
+.text_box {
+    width: 100%;
+    margin-top: 20%;    
+}
+.text_box > b:nth-child(1) {
+    font-size: 3.5rem;
+    font-weight: 700;
+    font-family: 'Akira Expanded', sans-serif;
+}
+.text_box > p {
+    font-size: 1.2rem;
+    margin-top: 10%;
+    line-height: 1.3;
+}
+.text_box > p::first-line {
+    font-weight: 700;
+}
+.profile_img {
+    width: 30%;
+    position: absolute;
+    top: 25%;
+    right: 10%;
+}
+.profile_img > p:nth-child(1) {
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 2;
+}
+.profile_img > p:nth-child(2) {
+    font-size: 1.2rem;
+}
+.profile_img > p:nth-child(3) {
+    padding-top: 10%;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.profile_img > p:nth-child(4) {
+    padding-top: 2%;
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+.skill {
+    margin-top: 10%;
+}
+.skill > p {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 2%;
+}
+.skill > img {
+    width: 40px;
+    float: left;
+    padding: 10px;
+}
+.skill > img:nth-child(2) {
+    padding: 5px 0 0;
+    width: 52px;
+}
+.skill > img:nth-child(3) {
+    padding: 5px 0 0 4px;
+    width: 52px;
+}
+.skill > img:nth-child(4) {
+    padding: 5px 0 0 4px;
+    width: 52px;
+}
+
+/* ------------------------------------------------------ */
+/* page3 */
+#page3 {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.contents_text {
+    width: 35%;
+    position: absolute;
+    top: 5%;
+    left: 4%;
+}
+.contents_text > p {
+    font-family: 'Akira Expanded', sans-serif;
+    font-size: 2rem;
+}
+.contents_list {
+    width: 45%;
+    position: absolute;
+    top: 5%;
+    right: 4%;
+}
+.list_text {
+    list-style: none;
+}
+.list_text li {
+    display: inline-block;
+    font-size: 1.4rem;
+
+    display: flex;          /* inline-block → flex */
+    align-items: center;    /* 세로 가운데 정렬 */
+    gap: 30px;              /* 글자와 버튼 사이 간격 */
+
+    line-height: 3;
+}
+.text_eg {
+    font-weight: 600;
+}
+.list_text li a {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-left: auto;
+
+    width:90px;
+    height:30px;
+
+    border-radius:999px;
+    border:1px solid rgba(255,255,255,.6);
+
+    font-size:1rem;
+    font-weight:700;
+    color:#2a2a2a;
+    text-decoration:none;
+
+    overflow:hidden;
+
+    /* 애플 스타일 실버 */
+    background:
+        radial-gradient(circle at 50% 25%,
+            rgba(255,255,255,.95) 0%,
+            rgba(245,245,245,.9) 20%,
+            rgba(220,220,220,.9) 55%,
+            rgba(175,175,175,.95) 100%);
+
+    backdrop-filter:blur(20px);
+    -webkit-backdrop-filter:blur(20px);
+
+    box-shadow:
+    inset 0 2px 4px rgba(255,255,255,.9),
+    inset 0 -10px 20px rgba(0,0,0,.08),
+    0 4px 12px rgba(0,0,0,.15);
+
+    transition:.3s ease;
+}
+/* 상단 하이라이트 */
+.list_text li a::before{
+    content:"";
+    position:absolute;
+
+    top:6px;
+    left:10px;
+    right:10px;
+    height:40%;
+
+    border-radius:999px;
+
+    background:linear-gradient(
+        to bottom,
+        rgba(255,255,255,.95),
+        rgba(255,255,255,0)
+    );
+}
+
+/* 광택 */
+.list_text li a::after{
+    content:"";
+    position:absolute;
+
+    width:70%;
+    height:200%;
+
+    top:-50%;
+    left:-40%;
+
+    background:linear-gradient(
+        90deg,
+        transparent,
+        rgba(255,255,255,.5),
+        transparent
+    );
+
+    transform:rotate(20deg);
+    filter:blur(18px);
+}
+
+.list_text li a:hover{
+    transform:translateY(-3px);
+
+    box-shadow:
+        inset 0 2px 5px rgba(255,255,255,.95),
+        inset 0 20px 30px rgba(255,255,255,.5),
+        inset 0 -15px 25px rgba(0,0,0,.15),
+        0 15px 40px rgba(0,0,0,.35);
+}
+
+.list_text li a:active{
+    transform:translateY(2px);
+
+    box-shadow:
+        inset 0 5px 10px rgba(0,0,0,.15),
+        inset 0 -2px 5px rgba(255,255,255,.8);
+}

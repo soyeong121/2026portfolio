@@ -1,0 +1,213 @@
+a {
+    text-decoration: none;
+    color: inherit;
+}
+ul {
+    list-style: none;
+}
+html {
+    /* overflow: hidden; */
+    overflow: scroll;
+    overflow-x: hidden;
+    color: #ededed;
+}
+body {
+    display: block;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    /* background: url(../images/basicBg.jpg) no-repeat; */
+    background-color: #333233;
+    background-size: cover;
+    background-attachment: fixed;
+    object-fit: cover;
+}
+/* 스크롤 없애기 */
+body::-webkit-scrollbar {
+  display: none;
+}
+button {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    padding: 0;
+    cursor: pointer;
+}
+/* 전체 폰트 */
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-display: swap;
+}
+
+/* page1 */
+#page1 {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.contents_text {
+    width: 35%;
+    position: absolute;
+    top: 5%;
+    left: 4%;
+}
+.contents_text > p {
+    font-family: 'Akira Expanded', sans-serif;
+    font-size: 3rem;
+}
+.contents_list {
+    width: 45%;
+    position: absolute;
+    top: 20%;
+    right: 4%;
+}
+/* .list_text {
+    list-style: none;
+}
+.list_text li {
+    display: inline-block;
+    font-size: 1.6rem;
+
+    display: flex;          
+    align-items: center;    
+    gap: 30px;             
+    line-height: 6;
+}
+.sub{
+    margin-top:10px;
+    font-size:1.4rem;
+    font-weight:300;
+    color:#cfcfcf;
+} */
+ .list_text li{
+    display:flex;
+    align-items:center;
+    gap:40px;
+
+    padding-bottom: 10%;
+}
+
+.title_box{
+    display:flex;
+    flex-direction:column;
+}
+
+.title{
+    font-size:2rem;
+    font-weight:600;
+    line-height:1.2;
+}
+
+.sub{
+    margin-top:10px;
+    font-size:1.4rem;
+    font-weight:300;
+    color:#cfcfcf;
+}
+
+.text_eg{
+    margin-left:auto;
+}
+
+.list_text li a{
+    margin-left:30px;
+}
+.list_text li a {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-left: auto;
+
+    width:90px;
+    height:30px;
+
+    border-radius:999px;
+    border:1px solid rgba(255,255,255,.6);
+
+    font-size:1rem;
+    font-weight:700;
+    color:#2a2a2a;
+    text-decoration:none;
+
+    overflow:hidden;
+
+    /* 애플 스타일 실버 */
+    background:
+        radial-gradient(circle at 50% 25%,
+            rgba(255,255,255,.95) 0%,
+            rgba(245,245,245,.9) 20%,
+            rgba(220,220,220,.9) 55%,
+            rgba(175,175,175,.95) 100%);
+
+    backdrop-filter:blur(20px);
+    -webkit-backdrop-filter:blur(20px);
+
+    box-shadow:
+    inset 0 2px 4px rgba(255,255,255,.9),
+    inset 0 -10px 20px rgba(0,0,0,.08),
+    0 4px 12px rgba(0,0,0,.15);
+
+    transition:.3s ease;
+}
+/* 상단 하이라이트 */
+.list_text li a::before{
+    content:"";
+    position:absolute;
+
+    top:6px;
+    left:10px;
+    right:10px;
+    height:40%;
+
+    border-radius:999px;
+
+    background:linear-gradient(
+        to bottom,
+        rgba(255,255,255,.95),
+        rgba(255,255,255,0)
+    );
+}
+
+/* 광택 */
+.list_text li a::after{
+    content:"";
+    position:absolute;
+
+    width:70%;
+    height:200%;
+
+    top:-50%;
+    left:-40%;
+
+    background:linear-gradient(
+        90deg,
+        transparent,
+        rgba(255,255,255,.5),
+        transparent
+    );
+
+    transform:rotate(20deg);
+    filter:blur(18px);
+}
+
+.list_text li a:hover{
+    transform:translateY(-3px);
+
+    box-shadow:
+        inset 0 2px 5px rgba(255,255,255,.95),
+        inset 0 20px 30px rgba(255,255,255,.5),
+        inset 0 -15px 25px rgba(0,0,0,.15),
+        0 15px 40px rgba(0,0,0,.35);
+}
+
+.list_text li a:active{
+    transform:translateY(2px);
+
+    box-shadow:
+        inset 0 5px 10px rgba(0,0,0,.15),
+        inset 0 -2px 5px rgba(255,255,255,.8);
+}

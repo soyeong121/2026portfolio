@@ -1,0 +1,266 @@
+a {
+    text-decoration: none;
+    color: inherit;
+}
+ul {
+    list-style: none;
+}
+html {
+    /* overflow: hidden; */
+    overflow: scroll;
+    overflow-x: hidden;
+    color: #0c0c0c;
+}
+body {
+    display: block;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    /* background: url(../images/basicBg.jpg) no-repeat; */
+    background-color: #eee;
+    background-size: cover;
+    background-attachment: fixed;
+    object-fit: cover;
+}
+/* 스크롤 없애기 */
+body::-webkit-scrollbar {
+  display: none;
+}
+button {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    padding: 0;
+    cursor: pointer;
+}
+/* 전체 폰트 */
+@font-face {
+    font-family: 'PyeojinGothic';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2504-1@1.0/PyeojinGothic-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-display: swap;
+}
+
+/* page1 */
+#page1 {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+
+    background-image: url(../images/poster1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#page1::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.text {
+    float: left;
+    width: 25%;
+    position: absolute;
+    top: 20%;
+    left: 6%;
+}
+.text > h1 {
+    font-size: 40px;
+    font-weight: 700;
+}
+.text > b {
+    font-size: 22px;
+    display: block;
+    line-height: 3rem;
+}
+.text > p:nth-child(3) {
+    padding-top: 30px;
+    line-height: 25px;
+}
+.text > p {
+    font-size: 18px;
+    padding-top: 80px;
+    padding-left: 5px;
+}
+.text > p::first-line {
+    font-weight: 700;
+}
+.text > img:nth-child(4) {
+    width: 100px;
+    padding-top: 10px;
+}
+.text > img:nth-child(6) {
+    width: 50px;
+    padding-top: 10px;
+}
+.text > img:nth-child(7) {
+    width: 50px;
+}
+
+/* page2 */
+#page2 {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+
+    background-image: url(../images/poster2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* page3 */
+#page3 {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+
+    background-image: url(../images/poster3.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* page4 */
+#page4 {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+
+    background-image: url(../images/poster4.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* page5 */
+#page5 {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+
+    background-image: url(../images/poster5.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* page6 */
+#page6 {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+
+    background-image: url(../images/poster6.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* page7 */
+#page7 {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+
+    background-image: url(../images/poster7.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* page8 */
+#page8 {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+
+    background-image: url(../images/poster8.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* page9 */
+#page9 {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+
+    background-image: url(../images/poster9.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* page10 */
+#page10 {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+
+    background-image: url(../images/poster10.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* page11 */
+#page11 {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+
+    background-image: url(../images/poster11.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* page12 */
+#page12 {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+
+    background-image: url(../images/poster12.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* page13 */
+#page13 {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+
+    background-image: url(../images/poster13.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* page14 */
+#page14 {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+
+    background-image: url(../images/poster14.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* page15 */
+#page15 {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+
+    background-image: url(../images/poster15.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}

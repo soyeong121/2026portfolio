@@ -33,6 +33,12 @@ button {
     padding: 0;
     cursor: pointer;
 }
+@font-face {
+    font-family: 'Akira Expanded';
+    src: url('../fonts/Akira Expanded Demo.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
 /* 전체 폰트 */
 @font-face {
     font-family: 'Pretendard';

@@ -40,6 +40,12 @@ button {
     font-weight: 300;
     font-display: swap;
 }
+@font-face {
+    font-family: 'Akira Expanded';
+    src: url('../fonts/AkiraExpanded-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
 
 /* ------------------------------------------------------ */
 /* page1 */

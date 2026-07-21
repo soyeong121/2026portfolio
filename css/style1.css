@@ -22,12 +22,6 @@ body {
     background-attachment: fixed;
     object-fit: cover;
 }
-@font-face {
-    font-family: 'Akira Expanded';
-    src: url('../fonts/Akira Expanded Demo.otf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
-}
 /* 스크롤 없애기 */
 body::-webkit-scrollbar {
   display: none;
@@ -38,6 +32,12 @@ button {
     background-color: transparent;
     padding: 0;
     cursor: pointer;
+}
+@font-face {
+    font-family: 'Akira Expanded';
+    src: url('../fonts/Akira Expanded Demo.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
 }
 /* 전체 폰트 */
 @font-face {
